@@ -1,142 +1,95 @@
-######################
-# Project Specific
-######################
-/build/www/**
-/src/test/javascript/coverage/
-/src/test/javascript/PhantomJS*/
-
-######################
-# Node
-######################
-/node/
-node_tmp/
-node_modules/
-npm-debug.log.*
-
-######################
-# SASS
-######################
-.sass-cache/
-
-######################
-# Eclipse
-######################
-*.pydevproject
-.project
-.metadata
-tmp/
-tmp/**/*
-*.tmp
-*.bak
-*.swp
-*~.nib
-local.properties
-.classpath
-.settings/
-.loadpath
-.factorypath
-/src/main/resources/rebel.xml
-
-# External tool builders
-.externalToolBuilders/**
-
-# Locally stored "Eclipse launch configurations"
-*.launch
-
-# CDT-specific
-.cproject
-
-# PDT-specific
-.buildpath
-
-######################
-# Intellij
-######################
-.idea/
-*.iml
-*.iws
-*.ipr
-*.ids
-*.orig
-
-######################
-# Visual Studio Code
-######################
-.vscode/
-
-######################
-# Maven
-######################
-/log/
-*/target/**
-######################
-# Gradle
-######################
-.gradle/
-/build/
-
-######################
-# Package Files
-######################
-*.jar
-*.war
-*.ear
-*.db
-
-######################
-# Windows
-######################
-# Windows image file caches
-Thumbs.db
-
-# Folder config file
-Desktop.ini
-
-######################
-# Mac OSX
-######################
+/.sonar
 .DS_Store
-.svn
+.idea/
+**/mdssys
+**/*.adfc_diagram
+**/*.adfbc_diagram
+._.DS_Store
+.project
+.settings
+bin
+*.iml
+target
+.classpath
+.springBeans
+doc
+.vscode/
+# See http://help.github.com/ignore-files/ for more about ignoring files.
 
-# Thumbnails
-._*
+# compiled output
+frontend/src/main/frontend/dist
+frontend/src/main/frontend/deploy
+frontend/src/main/frontend/tmp
 
-# Files that might appear on external disk
-.Spotlight-V100
-.Trashes
+# dependencies
+frontend/src/main/frontend/node_modules
+frontend/src/main/frontend/node_modules/**
 
-######################
-# Directories
-######################
-/bin/
-/deploy/
+frontend/src/main/frontend/node
+frontend/src/main/frontend/node/**
 
-######################
-# Logs
-######################
-*.log
+# IDEs and editors
+/.idea
+*.project
+*.classpath
+*.c9/
+*.launch
+*.settings/
 
-######################
-# Others
-######################
-*.class
-*.*~
-*~
-.merge_file*
+# IDE - VSCode
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
 
-######################
-# Gradle Wrapper
-######################
-!gradle/wrapper/gradle-wrapper.jar
+# misc
+/.sass-cache
+/connect.lock
+/coverage/*
+/libpeerconnection.log
+npm-debug.log
+testem.log
+/typings
+/.vagrant
 
-######################
-# Maven Wrapper
-######################
+# e2e
+/e2e/*.js
+/e2e/*.map
+
+#System Files
+.DS_Store
+Thumbs.db
+target/
 !.mvn/wrapper/maven-wrapper.jar
 
-######################
-# ESLint
-######################
-.eslintcache
-/.idea/
+### STS ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
 
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+
+### NetBeans ###
+nbproject/private/
+build/
+nbbuild/
+dist/
+nbdist/
+.nb-gradle/
+frontend/src/main/frontend/package-lock.json
+.sts4-cache
+/dataservice/dependency-reduced-pom.xml
+/frontend/src/main/frontend/yarn.lock
+provider/sammlogs
+provider/sammlogs/**
+web/sammlogs
+web/sannlogs/**
+frontend/src/package-lock.json

@@ -21,7 +21,7 @@ public class BeerControllerV2 {
         this.beerServiceV2 = beerServiceV2;
     }
 
-    @GetMapping({"/{beerId}"})
+    @GetMapping("/{beerId}")
     public ResponseEntity<BeerDtoV2> getBeer(@PathVariable("beerId") UUID beerId){
 
         return new ResponseEntity<>(beerServiceV2.getBeerById(beerId), HttpStatus.OK);
@@ -34,7 +34,7 @@ public class BeerControllerV2 {
 
         HttpHeaders headers = new HttpHeaders();
         //todo add hostname to url
-        headers.add("Location", "/api/v1/beer/" + savedDto.getId().toString());
+        headers.add("Location", "/api/v2/beer/" + savedDto.getId().toString());
 
         return new ResponseEntity(headers, HttpStatus.CREATED);
     }
